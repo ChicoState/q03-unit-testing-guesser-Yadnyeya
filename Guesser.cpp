@@ -79,7 +79,7 @@ bool Guesser::match(string guess) {
     // Decrement the remaining guesses as the guess was incorrect.
     m_remaining--;
 
-    // Check for brute force attempt or if there are no guesses left.
+    // Check if there are no guesses left.
     if (dist > 2 || m_remaining == 0) {
         m_remaining = 0; // Lock the game.
         return false;
